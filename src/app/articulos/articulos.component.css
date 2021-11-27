@@ -1,0 +1,27 @@
+table, td, th {border: 1px solid black;}
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+td, th{
+    width: 100px;
+    height: 35px;
+}
+caption {
+    font-family: Garamond;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #990000;
+    text-align: center;
+}
+th {
+    font-family: Verdana;
+    font-weight: bold;
+    color: #660033;
+    background-color: #ffffcc;
+}
+td {
+    font-family: Arial;
+    color: #0000cc;
+    background-color: #ccffff;
+}

@@ -1,0 +1,23 @@
+<p>ropa works!</p>
+
+<input type="text" ngModel="prenda_a_guardar" />
+<button class="enlaceboton" (click)="guardarPrenda()">AÑadir Prenda</button>
+<p *ngIf="prenda_a_guardar">
+    La prenda a Guardar es <strong>{{ prenda_a_guardar }}</strong>
+</p>
+
+<h3>Listado de Prendas de Ropa</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Articulo</th>
+            <th>Accion</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let prenda of listado_ropa; let i = index">
+            <td>{{  prenda }}</td>
+            <td><button (click)="eliminarPrenda(i)">Eliminar</button></td>
+        </tr>
+    </tbody>
+</table>
